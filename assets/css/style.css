@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -70,7 +71,8 @@ nav{
 
 .down{
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
+    
 }
 
 .second-one{
@@ -87,15 +89,32 @@ nav{
 /* #region main */
 
 .container{
-    height: calc(100% - 112px);
-    display: flex;
+    width: calc(100% - 112 );
+    margin: auto;
+}
+.left,
+.right{
+    height: 100%;
 }
 
 /* left side */
 
-.left{
+
+    
+
+.row{
     width: 70%;
     overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col{
+    width: calc(100% / 4);
+    img{
+        width: 100px;
+    }
 }
 
 /* right side */
