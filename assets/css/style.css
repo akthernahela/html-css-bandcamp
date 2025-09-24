@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* #region header */
+
+header{
+    height: 112px;
+
+    .top{
+        background-color: aquamarine;
+        height: 60px;
+    }
+
+    .down{
+        background-color: blueviolet;
+        height: 60px;
+    }
+}
+
+/* #endregion header */
