@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --band-primary: #222222;
     --band-secondary: #2b2b2b;
     --band-lighter: #464646;
     --band-topper: #3c3c3c;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     overflow: hidden;
@@ -19,27 +19,27 @@ body{
 
 /* #region header */
 
-header{
+header {
     height: 112px;
 
-    .top{
+    .top {
         background-color: var(--band-primary);
         height: 60px;
     }
 
-    .down{
+    .down {
         background-color: var(--band-secondary);
         height: 60px;
     }
 }
 
-.top{
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.first-one{
+.first-one {
     margin-left: 30px;
     padding: 10px;
     padding-right: 150px;
@@ -48,17 +48,18 @@ header{
     cursor: pointer;
     border-radius: 3px;
     border-width: 0cm;
-    
+
 }
 
-.logo img{
+.logo img {
     padding-left: 30px;
     vertical-align: middle;
 }
 
-nav{
+nav {
     padding-right: 30px;
-    a{
+
+    a {
         text-decoration: none;
         color: white;
         font-size: 13px;
@@ -69,13 +70,13 @@ nav{
 
 /* down part */
 
-.down{
+.down {
     padding-left: 30px;
     padding-top: 10px;
-    
+
 }
 
-.second-one{
+.second-one {
     color: grey;
     background-color: var(--band-topper);
     border: 1px solid;
@@ -88,39 +89,39 @@ nav{
 
 /* #region main */
 
-.container{
-    width: calc(100% - 112 );
-    margin: auto;
-}
-.left,
-.right{
-    height: 100%;
+main {
+    width: calc(100% - 112px);
+    display: flex;
+
+    .left {
+        width: 70%;
+        overflow-y: auto;
+    }
+
+    .right {
+        width: 30%;
+    }
+
 }
 
 /* left side */
 
-
-    
-
 .row{
-    width: 70%;
-    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-}
+    padding: 1rem;
 
-.col{
-    width: calc(100% / 4);
-    img{
-        width: 100px;
+    .col{
+        width: calc( 100% / 4 );
+
+        img{
+            width: 200px;
+        }
     }
 }
 
 /* right side */
 
-.right{
-    width: 30%;
-}
+
 
 /* #endregion main */
