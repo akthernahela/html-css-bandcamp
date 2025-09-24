@@ -71,8 +71,9 @@ nav {
 /* down part */
 
 .down {
+    padding: 10px;
     padding-left: 30px;
-    padding-top: 10px;
+    
 
 }
 
@@ -80,7 +81,7 @@ nav {
     color: grey;
     background-color: var(--band-topper);
     border: 1px solid;
-    padding: 10px;
+    padding: 5px;
     padding-right: 300px;
     border-radius: 20px;
 }
@@ -90,11 +91,12 @@ nav {
 /* #region main */
 
 main {
-    width: calc(100% - 112px);
+    background-color: var(--band-primary);
     display: flex;
 
     .left {
         width: 70%;
+        overflow-y: auto;
     }
 
     .right {
@@ -110,7 +112,7 @@ main {
     flex-wrap: wrap;
     padding-left: 50px;
     padding-top: 50px;
-    overflow-y: auto;
+    
     
 
     .col{
@@ -141,6 +143,11 @@ main {
         width: 450px;
         border: 5px solid gray;
     }
+}
+
+.play-button{
+    display: flex;
+    color: white;
 }
 
 /* #endregion main */
