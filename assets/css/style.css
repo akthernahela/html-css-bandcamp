@@ -81,3 +81,25 @@ nav{
 }
 
 /* #endregion header */
+
+/* #region main */
+
+.container{
+    height: calc(100% - 112px);
+    display: flex;
+}
+
+/* left side */
+
+.left{
+    width: 70%;
+    overflow-y: auto;
+}
+
+/* right side */
+
+.right{
+    width: 30%;
+}
+
+/* #endregion main */
