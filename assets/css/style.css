@@ -43,7 +43,7 @@ header {
 .first-one {
     margin-left: 30px;
     padding: 10px;
-    padding-right: 150px;
+    padding-right: 100px;
     background-color: var(--band-lighter);
     color: grey;
     cursor: pointer;
@@ -83,7 +83,7 @@ nav {
     background-color: var(--band-topper);
     border: 1px solid;
     padding: 5px;
-    padding-right: 300px;
+    padding-right: 30%;
     border-radius: 20px;
 }
 
@@ -216,3 +216,25 @@ main {
 }
 
 /* #endregion main */
+
+/* media query */
+
+/* display tablet */
+
+@media screen and ( max-width: 744px){
+    main .left{
+        width: 65%;
+    }
+    main .right{
+        width: 35%;
+    }
+
+    .row{
+        width: 100%;
+        padding: 10px;
+        .col{
+            width: calc( 100% / 2 );
+        }
+
+    }
+}
