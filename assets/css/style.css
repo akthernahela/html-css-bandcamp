@@ -105,6 +105,8 @@ main {
 
     .right {
         width: 30%;
+        height: 600px;
+        overflow-y: auto;
     }
 }
 
@@ -191,6 +193,13 @@ main {
     width: 100%;
     color: white;
     border: 1px solid white;
+}
+
+.release{
+    width: 70%;
+    padding-top: 30px;
+    margin: auto;
+    color: white;
 }
 
 /* #endregion main */
