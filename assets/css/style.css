@@ -15,6 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     overflow: hidden;
+    
 }
 
 /* #region header */
@@ -93,16 +94,22 @@ nav {
 main {
     background-color: var(--band-primary);
     display: flex;
+    
 
     .left {
         width: 70%;
+        height: 600px;
         overflow-y: auto;
+        
     }
 
     .right {
         width: 30%;
     }
+}
 
+.left{
+    border-right: 1px solid grey;
 }
 
 /* left side */
@@ -113,8 +120,6 @@ main {
     padding-left: 50px;
     padding-top: 50px;
     
-    
-
     .col{
         width: calc( 100% / 4 );
         padding: 10px;
@@ -160,8 +165,6 @@ main {
     font-size: 50px;
     padding-right: 20px;
 }
-
-
 
 .upper{
     background-color: white;
