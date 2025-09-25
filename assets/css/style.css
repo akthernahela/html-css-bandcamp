@@ -15,7 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     overflow: hidden;
-    
+
 }
 
 /* #region header */
@@ -60,6 +60,10 @@ header {
 nav {
     padding-right: 30px;
 
+    .lens {
+        display: none;
+    }
+
     a {
         text-decoration: none;
         color: white;
@@ -74,7 +78,7 @@ nav {
 .down {
     padding: 10px;
     padding-left: 30px;
-    
+
 
 }
 
@@ -94,13 +98,13 @@ nav {
 main {
     background-color: var(--band-primary);
     display: flex;
-    
+
 
     .left {
         width: 70%;
         height: 600px;
         overflow-y: auto;
-        
+
     }
 
     .right {
@@ -108,32 +112,32 @@ main {
     }
 }
 
-.left{
+.left {
     border-right: 1px solid grey;
 }
 
 /* left side */
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     padding-left: 50px;
     padding-top: 50px;
-    
-    .col{
-        width: calc( 100% / 4 );
+
+    .col {
+        width: calc(100% / 4);
         padding: 10px;
 
-        img{
-            width: 200px;
-            border: 3px solid gray;
+        img {
+            width: 100%;
+            border: 2px solid gray;
         }
 
-        figcaption{
+        figcaption {
             font-size: 15px;
             color: white;
 
-            p{
+            p {
                 color: grey;
             }
         }
@@ -142,40 +146,41 @@ main {
 
 /* right side */
 
-.right{
+.right {
     width: 30%;
     padding: 30px;
     margin: auto;
     vertical-align: middle;
 
-    .play{
-        width: 70%;
+    .play {
+        width: 80%;
         margin: auto;
     }
 }
-.play{
+
+.play {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    img{
+    img {
         width: 100%;
         border: 3px solid gray;
     }
 }
 
-.play-button{
+.play-button {
     padding-top: 30px;
     display: flex;
     color: white;
 }
 
-.play-icon{
+.play-icon {
     font-size: 50px;
     padding-right: 20px;
 }
 
-.upper{
+.upper {
     background-color: white;
     color: var(--band-primary);
     border-radius: 5px;
@@ -184,7 +189,7 @@ main {
     display: block;
 }
 
-.junior{
+.junior {
     background-color: var(--band-primary);
     border-radius: 5px;
     padding: 10px;
@@ -193,24 +198,24 @@ main {
     border: 1px solid white;
 }
 
-.release{
+.release {
     width: 70%;
     padding-top: 30px;
     margin: auto;
     color: white;
 }
 
-.author{
+.author {
     padding: 30px 0px;
     display: flex;
 
-    img{
+    img {
         height: 50px;
         width: 50px;
         border-radius: 50%;
     }
 
-    .details{
+    .details {
         padding-left: 20px;
     }
 }
@@ -219,50 +224,94 @@ main {
 
 /* media query */
 
-/* display tablet */
+/* #region display tablet */
 
-@media screen and ( max-width: 744px){
-    main .left{
+@media screen and (max-width: 744px) {
+    main .left {
         width: 65%;
     }
-    main .right{
+
+    main .right {
         width: 35%;
     }
 
 
     /* left side */
-    .row{
+    .row {
         width: 100%;
         padding: 10px;
-        .col{
-            width: calc( 100% / 2 );
+
+        .col {
+            width: calc(100% / 2);
         }
 
     }
 
     /* right side */
-    .right{
-        .play{
+    .right {
+        .play {
             width: 100%;
             padding: 0px;
             margin: 0px;
         }
 
-        .release{
+        .release {
             width: 100%;
             padding-top: 5px;
             margin: 0px;
         }
     }
 
-    .play-button{
+    .play-button {
         padding-top: 10px;
     }
 
-    .author{
+    .author {
         padding: 10px 0px;
-        img{
+
+        img {
             width: 50px;
         }
     }
 }
+
+/* #endregion display tablet */
+
+/* #region display mobile */
+
+@media screen and (max-width: 600px) {
+
+    .first-one {
+        display: none;
+    }
+
+    nav {
+        .lens {
+            display: inline;
+            color: white;
+            padding: 0px 30px;
+        }
+    }
+
+    main .left {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+
+    .right {
+        display: none;
+    }
+}
+
+/* #endregion display mobile */
