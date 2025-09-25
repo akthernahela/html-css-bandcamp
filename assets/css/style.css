@@ -229,6 +229,8 @@ main {
         width: 35%;
     }
 
+
+    /* left side */
     .row{
         width: 100%;
         padding: 10px;
@@ -236,5 +238,31 @@ main {
             width: calc( 100% / 2 );
         }
 
+    }
+
+    /* right side */
+    .right{
+        .play{
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .release{
+            width: 100%;
+            padding-top: 5px;
+            margin: 0px;
+        }
+    }
+
+    .play-button{
+        padding-top: 10px;
+    }
+
+    .author{
+        padding: 10px 0px;
+        img{
+            width: 50px;
+        }
     }
 }
