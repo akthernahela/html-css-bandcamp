@@ -327,7 +327,10 @@ main {
         vertical-align: middle;
     }
 
-    
+    .second-one{
+        width: 100%;
+        text-align: start;
+    }
 }
 
 /* #endregion display mobile */
