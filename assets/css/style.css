@@ -126,6 +126,11 @@ main {
 
         figcaption{
             font-size: 15px;
+            color: white;
+
+            p{
+                color: grey;
+            }
         }
     }
 }
@@ -140,14 +145,38 @@ main {
     justify-content: center;
 
     img{
-        width: 450px;
-        border: 5px solid gray;
+        width: 350px;
+        border: 3px solid gray;
     }
 }
 
 .play-button{
+    padding-top: 30px;
     display: flex;
     color: white;
+}
+
+.play-icon{
+    font-size: 50px;
+    padding-right: 20px;
+}
+
+
+
+.upper{
+    background-color: white;
+    color: var(--band-primary);
+    border-radius: 5px;
+    padding: 10px 140px;
+    display: block;
+}
+
+.junior{
+    background-color: var(--band-primary);
+    border-radius: 5px;
+    padding: 10px 145px;
+    color: white;
+    border: 1px solid white;
 }
 
 /* #endregion main */
