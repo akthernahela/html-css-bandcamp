@@ -52,9 +52,15 @@ header {
 
 }
 
-.logo img {
-    padding-left: 30px;
-    vertical-align: middle;
+.logo {
+    .original-logo {
+        padding-left: 30px;
+        vertical-align: middle;
+    }
+}
+
+.mobile-logo {
+    display: none;
 }
 
 nav {
@@ -104,7 +110,6 @@ main {
         width: 70%;
         height: 600px;
         overflow-y: auto;
-
     }
 
     .right {
@@ -121,8 +126,7 @@ main {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding: 30px;
 
     .col {
         width: calc(100% / 4);
@@ -307,11 +311,23 @@ main {
         }
     }
 
-
-
     .right {
         display: none;
     }
+
+    .logo {
+        .original-logo{
+            display: none;
+        }
+    }
+
+    .mobile-logo{
+        display: inline;
+        padding-left: 30px;
+        vertical-align: middle;
+    }
+
+    
 }
 
 /* #endregion display mobile */
